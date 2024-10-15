@@ -1,0 +1,149 @@
+@import url(./background.css);
+@import url(./header.css);
+@import url(./main.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text: #EDF1F7;
+  --red: #C51212;
+  --blue: #0041C2;
+  --green: #14B02D;
+  --yellow: #ffc12b;
+}
+
+body, button, a {
+  color: var(--text);
+  font: 400 1rem "Mukta", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+}
+
+/* Estilos para a seção Story */
+#story {
+  padding: 40px 20px;
+  background-color: var(--primary-bg-color);
+  color: var(--text);
+  text-align: center;
+}
+
+#story .story__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#story h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#story p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.offset {
+  display: block;
+  height: 80px; /* altura do deslocamento */
+  margin-top: -80px; /* altura negativa correspondente */
+  visibility: hidden;
+}
+
+
+.wallpapers__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.wallpapers__grid img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.wallpapers__grid img:hover {
+  transform: scale(1.05);
+}
+
+.trailer__video {
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+.trailer__video iframe {
+  width: 100%;
+  height: 315px; /* Ajuste a altura conforme necessário */
+  border-radius: 8px;
+}
+
+/* Estilos para as seções adicionais */
+#wallpapers, #trailer {
+  padding: 40px 20px;
+  background-color: var(--primary-bg-color);
+  color: var(--text);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#wallpapers .wallpapers__content, #trailer .trailer__content {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%; /* Adicionado para centralizar o conteúdo */
+}
+
+#wallpapers h2, #trailer h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center; /* Certificando-se que o texto está centralizado */
+}
+
+#wallpapers p, #trailer p {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center; /* Certificando-se que o texto está centralizado */
+}
+
+footer {
+  background-color: var(--primary-bg-color);
+  color: var(--text);
+  text-align: center;
+  padding: 20px;
+  position: relative; /* Isso assegura que o footer fique no final do conteúdo */
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+
+
+
+
+
+
