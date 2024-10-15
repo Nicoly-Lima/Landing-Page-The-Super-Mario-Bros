@@ -19,3 +19,9 @@ Este projeto tem a criação do site do filme **Mario Bros** ao usar _HTML_ e _C
 - [x] Váriaveis do css no `:root`
 - [x] Uso do CSS Flexbox
 - [x] Efeitos com a propriedade `transform` do css
+
+## **Acessar Página**
+
+Clique no link para acessar a página:
+https://nicoly-lima.github.io/Landing-Page-The-Super-Mario-Bros/
+
